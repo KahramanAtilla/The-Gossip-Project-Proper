@@ -1,0 +1,13 @@
+<%= form_tag url_for(action:'create'), method: "post" do %>
+
+      <%= label_tag 'ton pseudo' %><br>
+      <%= text_field_tag 'username'  %>
+      <br /> <br />
+
+      <%= label_tag 'ton mdp' %><br>
+      <%= text_field_tag 'mdp' %>
+      <br /> <br />
+
+      <%= submit_tag "Connexion" %>
+
+    <% end %>

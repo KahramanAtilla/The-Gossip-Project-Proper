@@ -1,0 +1,9 @@
+<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+  <div class="card-header"><%= @gossip.author.name %></div>
+  <div class="card-body">
+    <h4 class="card-title"><%= @gossip.title %></h4>
+    <p class="card-text"><%= @gossip.content %></p>
+  </div>
+</div>
+
+<p> <a href="<%= gossips_path %>" class="btn btn-primary">Retour</a>
