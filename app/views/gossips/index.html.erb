@@ -2,7 +2,8 @@
 
 <% Gossip.all.each do |potin| %>
 <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
-  <div class="card-body">
+ <div class="card-header"><%= potin.author.name %></div>
+ <div class="card-body">
     <h4 class="card-title"><%= potin.title %></h4>
     <p class="card-text"><%= potin.content %></p>
   </div>
