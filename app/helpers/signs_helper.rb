@@ -1,3 +1,4 @@
+module SignsHelper
 module SessionsHelper
   def current_user
     Author.find(session[:user_id])
@@ -7,4 +8,5 @@ module SessionsHelper
     session[:user_id] = user.id
   end
 
+end
 end

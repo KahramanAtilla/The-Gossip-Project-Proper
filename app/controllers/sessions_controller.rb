@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     user = Author.find_by(name: params[:username])
 
     if user && user.authenticate(params[:mdp])
-      session[:user_id] = user.id
+      log_in(user)
           redirect_to gossips_path
 
     else
