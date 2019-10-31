@@ -1,6 +1,6 @@
 module GossipsHelper
 def current_user
-    Author.find(session[:user_id])
+    Author.find_by(id: session[:user_id])
   end
 
   def log_in(user)

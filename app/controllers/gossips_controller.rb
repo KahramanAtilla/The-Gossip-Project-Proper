@@ -55,7 +55,7 @@ end
   private
 
   def authenticate_user
-    unless @author
+    unless current_user
       flash[:danger] = "Please log in."
       redirect_to new_session_path
     end
